@@ -34,6 +34,10 @@ img {
   max-width: 100%;
 }
 
+.roxinho {
+  color: var(--lilas);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -69,6 +73,18 @@ a {
   border-radius: 9px;
 }
 
+.marcaplaceholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--roxo), var(--rosa));
+  color: var(--texto);
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .navegacaotopo {
   gap: 4px;
 }
@@ -81,7 +97,8 @@ a {
   border-radius: 9px;
 }
 
-.navegacaotopo a:hover {
+.navegacaotopo a:hover,
+.navegacaotopo a.ativo {
   color: var(--texto);
   background: var(--painel-2);
 }
@@ -132,6 +149,13 @@ h2 {
 
 .cabecalhosecao {
   margin-bottom: 26px;
+}
+
+.divisorsecao {
+  border: 0;
+  height: 1px;
+  margin-top: 14px;
+  background: linear-gradient(90deg, transparent, var(--borda), transparent);
 }
 
 .trilhaprojetos {
@@ -289,11 +313,161 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  text-align: center;
+  justify-content: center;
   border-top: 1px solid var(--borda);
 }
 
 .rodape strong {
   color: var(--lilas);
+}
+
+.arearesumo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.painelresumo {
+  background: var(--painel);
+  border: 1px solid var(--borda);
+  border-radius: 13px;
+  padding: 19px;
+  box-shadow: var(--sombra);
+  animation: entrar-baixo 0.55s ease both;
+}
+
+.painelresumo strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--texto);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.painelresumo span {
+  color: var(--fraco);
+  font-size: 14px;
+}
+
+.gradecertificados {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cartaocertificado {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  background: var(--painel);
+  border: 1px solid var(--borda);
+  border-radius: 13px;
+  box-shadow: var(--sombra);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+  animation: entrar-baixo 0.55s ease both;
+}
+
+.cartaocertificado:hover {
+  transform: translateY(-4px);
+  border-color: #68458f;
+  background: var(--painel-2);
+}
+
+.topocertificado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.topocertificado span {
+  color: var(--lilas);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topocertificado small {
+  color: var(--fraco);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cartaocertificado h3 {
+  min-height: auto;
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.cartaocertificado p {
+  color: var(--fraco);
+  font-size: 15px;
+}
+
+.dadoscertificado {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--borda);
+}
+
+.dadoscertificado li {
+  list-style: none;
+}
+
+.dadoscertificado strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--lilas);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dadoscertificado span {
+  color: var(--texto);
+  font-size: 14px;
+}
+
+.linkcertificado {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.linkcertificado a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(211, 183, 255, 0.28);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.linkcertificado a:hover {
+  border-color: rgba(211, 183, 255, 0.6);
+  background: rgba(159, 92, 255, 0.16);
+  color: #fff;
 }
 
 @keyframes entrar-baixo {
@@ -329,6 +503,11 @@ h2 {
   .trilhaprojetos {
     --card: 256px;
   }
+
+  .arearesumo,
+  .gradecertificados {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 767px) {
@@ -353,5 +532,14 @@ h2 {
 
   .trilhaprojetos {
     --card: 1171px;
+  }
+
+  .arearesumo,
+  .gradecertificados {
+    grid-template-columns: 1fr;
+  }
+
+  .topocertificado {
+    flex-direction: column;
   }
 }

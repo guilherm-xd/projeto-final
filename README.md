@@ -1,6 +1,6 @@
 # DevJourney - Linha do Tempo da Evolução em Desenvolvimento Web
 
-Uma página web em formato de **Timeline**, desenvolvida como Trabalho Final da disciplina de Desenvolvimento Web, utilizando exclusivamente **HTML5 e CSS3**. O projeto apresenta de forma responsiva e animada os principais conteúdos estudados durante o semestre, além de uma seção pessoal sobre a evolução do desenvolvedor.
+Uma página web em formato de **Timeline**, desenvolvida como Trabalho Final do primeiro semestre do curso de Desenvolvimento de Sistemas, utilizando exclusivamente **HTML e CSS**. O projeto apresenta de forma responsiva e animada os principais conteúdos estudados durante o semestre, além de uma seção pessoal sobre a evolução do desenvolvedor.
 
 ---
 

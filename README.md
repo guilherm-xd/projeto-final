@@ -70,6 +70,26 @@ O projeto utiliza animações feitas com `@keyframes`, incluindo:
 
 ---
 
+## Preview
+
+### Página Inicial
+
+<img width="1919" height="1079" alt="Captura de tela 2026-06-15 022048" src="https://github.com/user-attachments/assets/706ec038-af44-47db-b64d-d71cda00e455" />
+
+### Minha Evolução
+
+<img width="1919" height="1079" alt="Captura de tela 2026-06-15 022102" src="https://github.com/user-attachments/assets/f0b5b6e9-0f42-4746-9e2e-dc02e8e24218" />
+
+### Certificados
+
+<img width="1919" height="1079" alt="Captura de tela 2026-06-15 022107" src="https://github.com/user-attachments/assets/41dfd555-a15f-42df-a651-2ea40b4954f5" />
+
+### Projetos
+
+<img width="1919" height="1079" alt="Captura de tela 2026-06-15 022115" src="https://github.com/user-attachments/assets/13596511-01aa-43af-9b46-0b710704ff6b" />
+
+---
+
 ## Projeto Online
 
 Acesse aqui: 

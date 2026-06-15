@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frutas</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Frutas</h1>
+    </header>
+
+    <nav>
+      <strong>
+        <a href="#horizontal">Horizontais</a> |
+        <a href="#vertical">Verticais</a> | <a href="#videos">Vídeos</a> |
+        <a href="#contato">Contato</a>
+      </strong>
+    </nav>
+
+    <section id="horizontal">
+      <h2>Imagens Horizontais</h2>
+      <div class="galeria-horizontal">
+        <div class="grid-item">
+          <img
+            src="imagens/morango.jpg"
+            width="320"
+            height="200"
+            alt="Morangos frescos e vermelhos"
+          />
+          <p class="descricao">Morangos</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/maçã.jpg" width="320" height="200" alt="Maçãs" />
+          <p class="descricao">Maçãs</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/pera.jpg" width="320" height="200" alt="Peras" />
+          <p class="descricao">Peras</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/uva.jpg" width="320" height="200" alt="Uvas" />
+          <p class="descricao">Uvas</p>
+        </div>
+        <div class="grid-item">
+          <img src="imagens/amora.jpg" width="320" height="200" alt="Amoras" />
+          <p class="descricao">Amoras</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="imagens/laranjas.jpg"
+            width="320"
+            height="200"
+            alt="Laranjas"
+          />
+          <p class="descricao">Laranjas</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="vertical">
+      <h2>Imagens Verticais</h2>
+      <div class="galeria-vertical">
+        <div class="grid-item">
+          <img
+            src="imagens/bananas.jpg"
+            width="250"
+            height="380"
+            alt="Bananas"
+          />
+          <p class="descricao">Bananas</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="imagens/pitayas.jpg"
+            width="250"
+            height="380"
+            alt="Pitayas"
+          />
+          <p class="descricao">Pitayas</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="imagens/Abacaxi.jpg"
+            width="250"
+            height="380"
+            alt="Abacaxi"
+          />
+          <p class="descricao">Abacaxi</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="imagens/melancia.jpg"
+            width="250"
+            height="380"
+            alt="Fatias de melancia"
+          />
+          <p class="descricao">Fatias de melancia</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Vídeos</h2>
+      <div class="galeria-videos">
+        <div>
+          <h3>Vídeo Local</h3>
+          <video controls width="400" height="225" autoplay loop>
+            <source src="video/video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div>
+          <h3>Vídeo do YouTube</h3>
+          <iframe
+            width="400"
+            height="225"
+            src="https://www.youtube.com/embed/wopPRfeeCeQ?si=tQ9U-OLpJZCgdmzK&amp;start=37"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form name="form1" method="post" action="">
+        <input type="text" name="nome" placeholder="Nome:" />
+        <input type="email" name="email" placeholder="E-mail:" />
+        <input type="password" name="senha" placeholder="Senha:" />
+        <select name="fruta">
+          <option value="" disabled selected>Sua fruta favorita:</option>
+          <option value="morango">Morango</option>
+          <option value="maca">Maçã</option>
+          <option value="pera">Pera</option>
+          <option value="uva">Uva</option>
+          <option value="amora">Amora</option>
+          <option value="laranja">Laranja</option>
+          <option value="banana">Banana</option>
+          <option value="pitaya">Pitaya</option>
+          <option value="abacaxi">Abacaxi</option>
+          <option value="melancia">Melancia</option>
+        </select>
+        <textarea
+          name="mensagem"
+          placeholder="Deixe sua mensagem aqui."
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <a href="#header">Voltar ao topo</a>
+    </footer>
+  </body>
+</html>

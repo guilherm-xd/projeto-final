@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="Timeline roxa">
+  <rect width="720" height="460" rx="36" fill="#211034"/>
+  <path d="M86 234h548" fill="none" stroke="#a855f7" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#d8b4fe">
+    <circle cx="132" cy="234" r="24"/>
+    <circle cx="278" cy="234" r="24"/>
+    <circle cx="424" cy="234" r="24"/>
+    <circle cx="570" cy="234" r="24"/>
+  </g>
+  <g fill="#ec4899">
+    <rect x="94" y="112" width="120" height="58" rx="14"/>
+    <rect x="240" y="292" width="120" height="58" rx="14"/>
+    <rect x="386" y="112" width="120" height="58" rx="14"/>
+    <rect x="532" y="292" width="92" height="58" rx="14"/>
+  </g>
+  <g stroke="#f6edff" stroke-width="8" stroke-linecap="round">
+    <path d="M116 132h76M262 312h76M408 132h76M554 312h48"/>
+    <path d="M116 152h46M262 332h48M408 152h38M554 332h28"/>
+  </g>
+</svg>

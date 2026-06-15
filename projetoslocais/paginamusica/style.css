@@ -1,0 +1,224 @@
+w* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #dde0f5;
+  color: #1a1a2e;
+  min-height: 100vh;
+}
+
+img {
+  border: 2px;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+h7 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+}
+
+.bolha {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: 0;
+}
+
+.bolha-1 {
+  width: 600px;
+  height: 600px;
+  top: -200px;
+  left: -150px;
+  background: rgba(160, 130, 255, 0.55);
+  animation: flutuar 20s ease-in-out infinite;
+}
+
+.bolha-2 {
+  width: 500px;
+  height: 500px;
+  bottom: -100px;
+  right: -130px;
+  background: rgba(80, 180, 255, 0.45);
+  animation: flutuar 24s ease-in-out infinite reverse;
+}
+
+.bolha-3 {
+  width: 380px;
+  height: 380px;
+  top: 40%;
+  left: 30%;
+  background: rgba(255, 160, 200, 0.35);
+  animation: flutuar 17s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(40px, -50px);
+  }
+  66% {
+    transform: translate(-30px, 35px);
+  }
+}
+
+.pagina {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.topo {
+  margin-bottom: 40px;
+}
+
+.avatar {
+  border: #4f46e5;
+  margin: 0 auto 24px;
+  border-width: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a78bfa, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 24px;
+  transition: 0.3s ease;
+  box-shadow: 0 12px 40px #dde0f5;
+}
+
+.avatar:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 48px #dde0f5;
+}
+
+.nome {
+  font-family: "Sora", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #0d0d20;
+  margin-bottom: 12px;
+}
+
+.descricao {
+  font-size: 16px;
+  color: rgba(26, 26, 46, 0.55);
+  line-height: 1.65;
+}
+
+.cartao {
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 32px rgba(80, 60, 180, 0.1);
+}
+
+.rotulo {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #6366f1;
+  margin-bottom: 10px;
+}
+
+.titulo-cartao {
+  font-family: "Sora", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: #0d0d20;
+  margin-bottom: 10px;
+}
+
+.texto {
+  font-size: 15px;
+  color: rgba(26, 26, 46, 0.58);
+  line-height: 1.75;
+}
+
+.lista-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 7px 15px;
+  font-size: 13px;
+  transition: 0.3s ease;
+  color: rgba(26, 26, 46, 0.6);
+}
+
+.tag:hover {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.35);
+  color: #4f46e5;
+  transform: scale(1.15);
+}
+
+.linha-contato {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: rgba(26, 26, 46, 0.58);
+  font-size: 14px;
+}
+
+.linha-contato:last-child {
+  border-bottom: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.redes img {
+  width: 40px;
+  height: 40px;
+}
+
+.redes img:hover {
+  transform: scale(1.15);
+}

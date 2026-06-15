@@ -538,7 +538,7 @@ h2 {
   }
 
   .logomarca {
-    font-size: 14px;
+    display: none;
   }
 
   .navegacaotopo {
@@ -551,6 +551,11 @@ h2 {
   .navegacaotopo a {
     font-size: 12px;
     padding: 6px 9px;
+  }
+
+  .evolucao {
+    display: none;
+    font-size: 0px;
   }
 
   .secaoabertura,

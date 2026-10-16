@@ -112,4 +112,4 @@ Durante o desenvolvimento deste projeto foi possível aprender:
 
 ## Autor
 
-- [Guilherme Miranda Murillo](https://github.com/guilherm-xd)
+- <img src="https://github.com/guilherm-xd.png?size=24" width="24" align="absmiddle"> [Guilherme Miranda Murillo](https://github.com/guilherm-xd)
